@@ -1,108 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Site</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="shortcut icon" href="assets/img/favcon.png" type="image/x-icon" />
+    <title>Thiago Bertolino</title>
+
+	<!-- Bootstrap CSS file -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- font awesome CSS file -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+
+	<!-- custom CSS file -->
+	<link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <!-- Header -->
-    <header class="container">
-      <section class="row">
-        <img src="./assets/images/memoji-face.PNG" alt="Memoji" />
 
-        <!-- Menu do Site -->
-        <nav>
-          <ul>
-            <li>
-              <a href="#">
-                Home
-              </a>
-            </li>
+	<!-- Social Fixed Menu -->
+	<ul class="ct-socials">
+		<li>
+			<a class="ct-socials-a" href="https://github.com/thbertolino" target="_blank"><i class="fab fa-github"></i></a>
+		</li>
 
-            <li>
-              <a href="#">
-                Sobre
-              </a>
-            </li>
+		<li>
+		  <a href="https://twitter.com/thbertolino" target="_blank"><i class="fab fa-twitter"></i></a>
+		</li>
 
-            <li>
-              <a href="#">
-                Portfólio
-              </a>
-            </li>
+		<li>
+		  <a href="https://www.linkedin.com/in/thbertolino" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+		</li>
+		
+		<li>
+			<a href="https://www.instagram.com/thbertolino" target="_blank"><i class="fab fa-instagram"></i></a>
+		</li>
 
-            <li>
-              <a href="#">
-                Contato
-              </a>
-            </li>
+    <li>
+			<a href="https://www.facebook.com/thbertolino" target="_blank"><i class="fab fa-facebook"></i></a>
+		</li>
+	</ul>
 
-            <li>
-              <a href="#" class="btn btn-laranja">
-                Currículo
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- End Menu do Site -->
-      </section>
-    </header>
-    <!-- End Header -->
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand navbar-light fixed-top my-bg-dark">
+		<div class="container">
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#about_me" >About
+						<span class="sr-only">(current)</span>
+						</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="#experience">Experience</a>
+				</li> -->
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
 
-    <!-- Container -->
-    <main class="container">
-      <!-- Section conteúdo do Site -->
-      <section class="row sobre-web-design">
-        <!-- Contúdo de Texto Sobre o Site -->
-        <article>
-          <h1>Thiago Bertolino</h1>
-          <h2>Software Developer</h2>
+	<!-- Welcome page -->
+	<header class="masthead my-bg-dark">
+		<div class="container h-100 box">
+			<div class="row h-100 align-items-center">
+				<div class="col-12 text-center text-white output" id="output">
+					<div class="d-flex justify-content-center align-items-center media-ajuste">
+						<img src="assets/img/hand.gif" style="height: 35px; width: auto; margin-bottom: 8px;" alt="Mão acenando">
+						<h1 class="font-weight-light cursor" id="header"></h1>
+					</div>
+					<p id="subheader"></p>
+				</div>
+			</div>
+			<!-- <a href="#section02"><span></span>Scroll</a> -->
+			<a href="#about_me" class="col-12 my-btn"><span></span></a>
+			
+		</div>
+	</header>
 
-          <p>
-            Bem-vindo(a) ao meu site! =D
-          </p>
+  	<!-- Page About me -->
+	<div class="min-alt my-bg-white d-flex justify-content-end align-items-center" id="about_me">
+		<div class="container content">
+			<div class="row">
+				<div class="col-lg d-flex justify-content-end align-items-center" style="margin-right: 60px;">
+					<img class="rounded-circle divShadow" style="height: 350px; width: auto; margin-bottom: 20px; margin-left: 60px;" src="assets/img/memoji-mac.PNG">
+				</div>
+	
+				<div class="col-lg flex-column justify-content-start align-items-center">
+					<h2 class="font-weight-light">About Me</h2>
+					<p>Hello! My name is...</p>
 
-          <a href="#" class="btn btn-laranja">Saiba Mais</a>
-        </article>
-        <!-- End Contúdo de Texto Sobre o Site -->
+					<div class="section-skills" style="margin-top: 50px;">
+						
+						<h2 class="font-weight-light">Stacks</h2>
+						<small class="text-muted">Some of the main technologies that I used</small>
+						<ul class="d-flex flex-wrap skills">
+								<li><i class="fab fa-php fa-3x"></i>PHP</li>
+								<li><i class="fas fa-database fa-3x"></i>MySQL</li>
+								<li><i class="fab fa-html5 fa-3x"></i>HTML5</li>
+								<li><i class="fab fa-css3-alt fa-3x"></i>CSS3</li>
+								<li><i class="fab fa-js-square fa-3x"></i>JavaScript</li>
+								<li><i class="fab fa-bootstrap fa-3x"></i>Bootstrap</li>
+								<li><i class="fab fa-swift fa-3x"></i>Swift</li>
+								<li><i class="fab fa-linux fa-3x"></i>Linux</li>
+								<li><i class="fab fa-windows fa-3x"></i>Windows</li>
+								<li><i class="fab fa-apple fa-3x"></i>MacOS</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				
+			</div>
+		</div>
+	</div>
 
-        <figcaption>
-          <img
-            src="./assets/images/memoji-mac.PNG"
-            alt="Criação de Site"
-          />
-        </figcaption>
-      </section>
-      <!-- End Section conteúdo do Site -->
-    </main>
-    <!-- End Container -->
+	<!-- Page Experience -->
+	<!-- ------ -->
 
-    <!-- Footer -->
-    <footer class="container">
-      <!-- Redes Sociais -->
-      <ul class="row">
-        <li>
-          <a href="#">
-            <img src="./assets/images/logo-insta.png" alt="Instagram" />
-          </a>
-        </li>
+	<!-- Social Contacts -->
+	<div class="contacts d-flex justify-content-center align-items-center text-white" id="contact">
+		<div class="row">
 
-        <li>
-          <a href="#">
-            <img src="./assets/images/logo-twitter.png" alt="Twitter" />
-          </a>
-        </li>
+			<div class="d-flex justify-content-center align-items-center">
+				<i class="fas fa-envelope fa-lg" style="margin-right: 8px;"></i>
+				<h2>Contact</h2>
+			</div>
+			<p class="text-center">thiagopbertolino@gmail.com</p>
+		</div>
+	</div>
 
-        <li>
-          <a href="#">
-            <img src="./assets/images/logo-facebook.png" alt="Facebook" />
-          </a>
-        </li>
-      </ul>
-      <!-- Redes Sociais -->
-    </footer>
-    <!-- End Footer -->
+	<!-- Footer -->
+	<footer class="page-footer font-small indigo my-bg-footer">	
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3 text-white"> <i class="fas fa-rocket"></i> Developed by
+		<a href="https://twitter.com/thbertolino" style="color: #ccff00;"> @thbertolino </a> 
+		</div>
+		<!-- Copyright -->
+	
+	</footer>
+	<!-- Footer -->
+
+	<!-- jQuery js file -->
+	<script src="assets/js/jquery3.6.0.js"></script>
+  <!-- Bootstrap js file -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Personalizado -->
+	<script src="assets/js/my.js"></script>
+
   </body>
 </html>
