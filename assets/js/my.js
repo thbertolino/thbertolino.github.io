@@ -6,15 +6,16 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
-  "Hey everyone! I'm Thiago Bertolino|Software developer.", 
+  "Hey everyone! I'm Thiago Bertolino|A Software developer.", 
   
 ];
 
 // Speed (in milliseconds) of typing.
-var speedForward = 100, //Typing Speed
+var speedForward = 175, //Typing Speed
     speedWait = 1000, // Wait between typing and backspacing
-    speedBetweenLines = 1000, //Wait between first and second lines
+    speedBetweenLines = 1200, //Wait between first and second lines
     speedBackspace = 25; //Backspace Speed
+
 
 //Run the loop
 typeWriter("output", textArray);
