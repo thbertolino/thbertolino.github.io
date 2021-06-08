@@ -10,4 +10,4 @@
 <p>Tecnologias: PHP, HTML, CSS, Bancos de Dados e mais.</p>
 ---
 
-Por Thiago Bertolino © Todos os direitos reservados:rock: [Linkedin!](https://www.linkedin.com/in/thbertolino/) | [Twitter!](https://twitter.com/thbertolino/)
+Por Thiago Bertolino © Todos os direitos reservados: [Linkedin!](https://www.linkedin.com/in/thbertolino/) | [Twitter!](https://twitter.com/thbertolino/)
