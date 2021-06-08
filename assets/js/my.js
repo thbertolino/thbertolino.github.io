@@ -6,14 +6,14 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
 var textArray = [
-  "Hey everyone! I'm Thiago Bertolino|A Software developer.", 
+  "Hey everyone! I'm Thiago Bertolino./Welcome to my site.", 
   
 ];
 
 // Speed (in milliseconds) of typing.
 var speedForward = 175, //Typing Speed
-    speedWait = 1000, // Wait between typing and backspacing
-    speedBetweenLines = 1200, //Wait between first and second lines
+    speedWait = 1200, // Wait between typing and backspacing
+    speedBetweenLines = 1250, //Wait between first and second lines
     speedBackspace = 25; //Backspace Speed
 
 
@@ -36,7 +36,7 @@ function typeWriter(id, ar) {
     if (i < aString.length) {
       
       // If character about to be typed is a pipe, switch to second line and continue.
-      if (aString.charAt(i) == "|") {
+      if (aString.charAt(i) == "/") {
         isParagraph = true;
         eHeader.removeClass("cursor");
         eParagraph.addClass("cursor");
@@ -91,3 +91,62 @@ function typeWriter(id, ar) {
     }
   }
 }
+
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 1000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #fff }";
+  document.body.appendChild(css);
+};
+
+

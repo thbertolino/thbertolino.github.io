@@ -429,5 +429,20 @@ border-right: 7px solid #333C42;
 }
 
 }
+.red-text {
+    color: red;
+  }
+  
+.white-text {
+    color: white;
+}
+
+.black-text {
+    color: black;
+}
+
+.negrito {
+    font-weight: bold;
+}
 
 /* Footer */
