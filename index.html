@@ -73,6 +73,9 @@
 			</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#home">Home</a>
+				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="#about_me">About
 						<span class="sr-only">(current)</span>
@@ -80,6 +83,9 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#experience">Experience</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#articles">Articles</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#playlist">Playlist</a>
@@ -95,8 +101,16 @@
 	<!-- Welcome page -->
 	<header class="masthead my-bg-dark">
 		<div class="container h-100 box">
-			<div class="row h-100 align-items-center">
+			<div class="row h-100 align-items-center" id="home">
+				
 				<div class="col-12 text-center text-white output" id="output">
+					<h4  class="white-text" color=white>
+						<span
+						style="color:white"
+						class="txt-rotate"
+						data-period="2000"
+						data-rotate='[ "Welcome!", "Bem-vindo!", "Benvenuto!", "Willkommen!", "ようこそ", "¡Bienvenido!", "欢迎"]'></span>
+					</h4>
 					<div class="d-flex justify-content-center align-items-center media-ajuste">
 						<h1 class="font-weight-light cursor" id="header"></h1>
 					</div>
@@ -279,25 +293,39 @@
 
 	<!-- ------ -->
 
-	<!-- My personal playlist -->
-	<br><div class="playlist d-flex justify-content-center align-items-center text-black" id="playlist">
-		<div class="row">
-			<div class="d-flex justify-content-center align-items-center">
-				<i class="fas fa-music fa-lg" style="margin-right: 8px;"></i>
-				<h2>Personal playlist</h2> <br>
-			</div>
-			<div class="d-flex justify-content-center align-items-center">
-			<p class="negrito">My favorite tracks of all life </p>
-			</div>
-			<iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/playlist/9132823562" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-		</div>
-	</div>
-		</div>
-	</div>
-</div>
-<br>
-<div>
 	<!-- Social Contacts -->
+	<div class="contacts d-flex justify-content-center align-items-center text-white" id="articles">
+		<div class="row">
+
+			<div class="d-flex justify-content-center align-items-center">
+				<i class="fas fa-newspaper fa-lg" style="margin-right: 8px;"></i>
+				<h2>Articles</h2>
+			</div>
+		<div class="text-center text-white">
+			<a href="https://thbertolino.medium.com/" style="color:#ffffff;">
+			<h4>See all the articles I've published on Medium (in Portuguese)</h4></a>
+		</div>
+		</div>
+	</div>
+
+		<!-- My personal playlist -->
+		<br><div class="playlist d-flex justify-content-center align-items-center text-black" id="playlist">
+			<div class="row">
+				<div class="d-flex justify-content-center align-items-center">
+					<i class="fas fa-music fa-lg" style="margin-right: 8px;"></i>
+					<h2>Personal playlist</h2> <br>
+				</div>
+				<div class="d-flex justify-content-center align-items-center">
+				<p class="negrito">My favorite tracks of all life </p>
+				</div>
+				<iframe title="deezer-widget" src="https://widget.deezer.com/widget/auto/playlist/9132823562" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div>
 
 	<!-- Footer -->
 	<footer class="page-footer font-small indigo my-bg-footer">	
